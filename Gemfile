@@ -3,15 +3,16 @@
 source 'https://rubygems.org'
 
 # Core
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
-gem 'redis', '~> 3.3.3'
 gem 'puma', '~> 3.0'
 gem 'rack-cors'
+gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'redis', '~> 3.3.3'
 
 # Misc
-gem 'active_model_serializers', '~> 0.10.0'
 gem 'active_interaction', '~> 3.4.0'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'pundit', '~> 1.1.0'
 
 # Worker
 gem 'sidekiq', '~> 4.2.9'
