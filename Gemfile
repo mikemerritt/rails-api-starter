@@ -33,6 +33,7 @@ group :development, :test do
   gem 'rubocop-checkstyle_formatter', '0.3.0', require: false
 
   # Testing
+  gem 'factory_girl_rails', '~> 4.8'
   gem 'rspec-rails', '~> 3.5'
 end
 
