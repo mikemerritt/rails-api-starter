@@ -12,6 +12,8 @@ Style/SingleLineBlockParams:
 
 Rails:
   Enabled: true
+Rails/FilePath:
+  Enabled: false
 
 AllCops:
   TargetRubyVersion: 2.3
@@ -19,3 +21,4 @@ AllCops:
     - client/**/*
     - db/schema.rb
     - db/migrate/*.rb
+    - Guardfile

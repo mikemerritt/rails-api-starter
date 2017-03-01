@@ -34,7 +34,10 @@ group :development, :test do
 
   # Testing
   gem 'factory_girl_rails', '~> 4.8'
+  gem 'guard-rspec', require: false
+  gem 'guard-rubocop', '~> 1.2'
   gem 'rspec-rails', '~> 3.5'
+  gem 'terminal-notifier-guard', '~> 1.7.0'
 end
 
 group :development do
