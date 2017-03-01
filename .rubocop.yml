@@ -1,0 +1,21 @@
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - client/**/*
+    - db/schema.rb
+    - db/migrate/*.rb
