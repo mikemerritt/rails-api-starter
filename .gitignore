@@ -18,6 +18,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/coverage
 
 # Ignore IDE settings
 .idea
