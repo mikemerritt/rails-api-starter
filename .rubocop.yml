@@ -7,6 +7,10 @@ Metrics/LineLength:
 Metrics/ModuleLength:
   Enabled: false
 
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
 Style/SingleLineBlockParams:
   Enabled: false
 
@@ -14,9 +18,11 @@ Rails:
   Enabled: true
 Rails/FilePath:
   Enabled: false
+Rails/Output:
+  Enabled: false
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
   Exclude:
     - client/**/*
     - db/schema.rb
