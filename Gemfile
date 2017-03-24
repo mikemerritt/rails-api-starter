@@ -1,17 +1,18 @@
 # frozen_string_literal: true
-
 source 'https://rubygems.org'
 
 # Core
 gem 'mysql2', '>= 0.3.18', '< 0.5'
-gem 'puma', '~> 3.0'
-gem 'rack-cors'
+gem 'puma', '~> 3.8.2'
+gem 'rack-cors', '~> 0.4.1'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'redis', '~> 3.3.3'
 
 # Misc
 gem 'active_interaction', '~> 3.4.0'
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'bcrypt', '~> 3.1.11'
+gem 'knock', '~> 2.1.1'
 gem 'pundit', '~> 1.1.0'
 
 # Worker
@@ -25,7 +26,7 @@ gem 'tamplier', '0.3.4'
 
 group :development, :test do
   # Debugging tools
-  gem 'byebug', platform: :mri
+  gem 'byebug', '~> 9.0.6', platform: :mri
   gem 'pry-rails', '~> 0.3.5'
 
   # Code Quality
@@ -34,7 +35,7 @@ group :development, :test do
 
   # Testing
   gem 'factory_girl_rails', '~> 4.8'
-  gem 'guard-rspec', require: false
+  gem 'guard-rspec', '~> 4.7.3', require: false
   gem 'guard-rubocop', '~> 1.2'
   gem 'rspec-rails', '~> 3.5'
   gem 'terminal-notifier-guard', '~> 1.7.0'
@@ -42,8 +43,7 @@ end
 
 group :development do
   gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '~> 2.0.1'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
