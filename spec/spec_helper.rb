@@ -1,7 +1,11 @@
 # frozen_string_literal: true
-
 require 'simplecov'
-SimpleCov.start 'rails'
+SimpleCov.start :rails do
+  add_group 'Policy', 'app/policies/'
+  add_group 'Interactors', 'app/interactors/'
+  add_group 'Serializers', 'app/serializers/'
+  add_group 'Channels', 'app/channels/'
+end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
