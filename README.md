@@ -1,2 +1,2 @@
 # Rails API Starter
-Boilerplate for building Rails 5 API only apps.
+Getting projects up and running can be time consuming. This is a simple starter rails 5 app for quickly creating JSON APIs. Preconfigured with JWT authentication.
