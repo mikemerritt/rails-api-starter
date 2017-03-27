@@ -5,7 +5,7 @@ before_install:
   - "cp config/secrets.yml.sample config/secrets.yml"
   - "cp config/sidekiq.yml.sample config/sidekiq.yml"
 before_script:
-  - "rails db:create"
+  - "bundle exec rake db:create"
 services:
   - mysql
 rvm:
