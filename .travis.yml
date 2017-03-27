@@ -4,6 +4,8 @@ before_install:
   - "cp config/database.yml.sample config/database.yml"
   - "cp config/secrets.yml.sample config/secrets.yml"
   - "cp config/sidekiq.yml.sample config/sidekiq.yml"
+before_script:
+  - "rails db:create"
 services:
   - mysql
 rvm:
