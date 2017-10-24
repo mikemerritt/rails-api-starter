@@ -12,6 +12,7 @@
 
 # Ignore configs
 /**/config/*.yml
+config/secrets.yml.key
 
 # Ignore all logfiles and tempfiles.
 /log/*

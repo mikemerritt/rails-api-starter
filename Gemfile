@@ -6,7 +6,7 @@ source 'https://rubygems.org'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.10.0'
 gem 'rack-cors', '~> 1.0.2'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'rails', '~> 5.1.4'
 gem 'redis', '~> 4.0.1'
 
 # Misc
